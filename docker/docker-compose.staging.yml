@@ -1,0 +1,8 @@
+services:
+  app-staging:
+    image: sit753/demo:${DOCKER_TAG:-staging}
+    container_name: sit753_app_staging
+    ports:
+      - "3001:3000"
+    environment:
+      - PORT=3000

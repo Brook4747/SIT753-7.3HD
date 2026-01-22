@@ -1,0 +1,8 @@
+services:
+  app-prod:
+    image: sit753/demo:latest
+    container_name: sit753_app_prod
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
